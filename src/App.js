@@ -5,6 +5,7 @@ import { Form } from './components/Form/Form';
 import { Input } from './components/Input/Input';
 import { Textarea } from './components/Textarea/Textarea';
 import { Button } from './components/Button/Button';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,11 +13,12 @@ function App() {
       <Header />
       <CourseList />
       <Form>
-            <Input placeholder="Seu nome" />
-            <Input placeholder="Seu e-mail" />
-            <Textarea placeholder="Sua dúvida" />
-            <Button text="Enviar" />
-        </Form>
+        <Input placeholder="Seu nome" />
+        <Input placeholder="Seu e-mail" />
+        <Textarea placeholder="Sua dúvida" />
+        <Button text="Enviar" />
+      </Form>
+      <Footer />
     </>
   );
 }
