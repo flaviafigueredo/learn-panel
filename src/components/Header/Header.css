@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 2rem;
+}
