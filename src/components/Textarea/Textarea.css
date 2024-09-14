@@ -1,0 +1,19 @@
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.textarea-container label {
+    font-size: 1.6rem;
+}
+
+.textarea-container textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
