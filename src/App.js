@@ -11,7 +11,9 @@ function App() {
   return (
     <>
       <Header />
-      <CourseList />
+      <main className="main">
+        <CourseList />
+      </main>
       <Form>
         <Input placeholder="Seu nome" />
         <Input placeholder="Seu e-mail" />

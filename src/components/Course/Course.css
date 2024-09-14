@@ -2,30 +2,40 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;    
-    width: 300px;
-    height: 300px;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
+    align-items: center;
+    text-align: center;    
+    width: 350px;
+    height: 350px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    background-color: var(--color-component-background);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 
 .course img {
     max-width: 100%;
-    height: 150px; 
+    height: 160px; 
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    flex: 3;
 }
 
 .course h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    color: var(--color-text-primary);
     flex: 1;
 }
 
 .course p {
     font-size: 1.6rem;
+    color: var(--color-text-secondary);
     flex: 1;
 }

@@ -1,20 +1,28 @@
 .footer {
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
+    background-color: var(--color-component-background);
+    color: var(--color-text-primary);
+    font-size: 1.6rem;
 }
 
 .footer p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .footer-links a {
     text-decoration: none;
     font-size: 1.5rem;
+    color: var(--color-text-primary);
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--color-secondary);
 }

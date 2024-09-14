@@ -1,19 +1,17 @@
 .textarea-container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
-.textarea-container label {
-    font-size: 1.6rem;
+    gap: 1rem;
 }
 
 .textarea-container textarea {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    padding: 1.2rem;
+    border: 1px solid #444444;
+    border-radius: 6px;
     font-size: 1.6rem;
-    width: 100%;
-    min-height: 100px;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    min-height: 120px;
     resize: vertical;
 }

@@ -1,0 +1,6 @@
+.advice p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem; 
+    color: var(--color-text-secondary); 
+    padding: 1rem 0;
+}

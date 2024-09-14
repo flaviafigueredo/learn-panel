@@ -1,3 +1,4 @@
+import './Advice.css'
 import { useEffect, useState } from "react"
 
 async function getAdvice() {
