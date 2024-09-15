@@ -4,7 +4,6 @@ import { Header } from './components/Header/Header';
 import { Form } from './components/Form/Form';
 import { Input } from './components/Input/Input';
 import { Textarea } from './components/Textarea/Textarea';
-import { Button } from './components/Button/Button';
 import { Footer } from './components/Footer/Footer';
 import { Advice } from './components/Advice/Advice';
 
@@ -17,10 +16,31 @@ function App() {
         <CourseList />
       </main>
       <Form>
-        <Input placeholder="Seu nome" />
-        <Input placeholder="Seu e-mail" />
-        <Textarea placeholder="Sua dúvida" />
-        <Button text="Enviar" />
+        {(formData, handleChange, errors) => (
+          <>
+            <Input
+              name="name"
+              placeholder="Seu nome"
+              value={formData.name}
+              onChange={handleChange}
+              error={errors.name}
+            />
+            <Input
+              name="email"
+              placeholder="Seu e-mail"
+              value={formData.email}
+              onChange={handleChange}
+              error={errors.email}
+            />
+            <Textarea
+              name="question"
+              placeholder="Sua dúvida"
+              value={formData.question}
+              onChange={handleChange}
+              error={errors.question}
+            />
+          </>
+        )}
       </Form>
       <Footer />
     </>
