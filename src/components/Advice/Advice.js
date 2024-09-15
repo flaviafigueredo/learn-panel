@@ -8,21 +8,25 @@ async function getAdvice() {
     return data.slip.advice
 }
 
-export function Advice() {   
+export function Advice() {
     const [advice, setAdvice] = useState('') // estado para armazenar o conselho
 
     useEffect(() => {
         // chama a função de pegar conselho quando o componente monta
         async function fetchAdvice() {
-            const advice = await getAdvice()
-            setAdvice(advice)
+            try {
+                const advice = await getAdvice() // chama a API e armazena o conselho
+                setAdvice(advice) // atualiza o estado com o conselho obtido
+            } catch (error) {
+                setAdvice('Erro ao carregar o conselho') // lida com erros na chamada da API
+            }
         }
         fetchAdvice()
     }, []) // o array vazio faz o useEffect rodar apenas na montagem do componente
-    
+
     return (
         <div className="advice">
-            <p>{advice}</p> {/* renderiza o conselho da API */}
+            <p>{advice || 'Carregando...'}</p> {/* exibe "Carregando..." enquanto não há conselho */}
         </div>
     )
 }
