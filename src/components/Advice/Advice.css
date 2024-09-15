@@ -1,6 +1,18 @@
+.advice {
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    margin: 1rem;
+}
+
 .advice p {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem; 
-    color: var(--color-text-secondary); 
-    padding: 1rem 0;
+    font-size: var(--font-size-small);
+    color: var(--color-text-secondary);
+    padding: 1rem;
+}
+
+@media(max-width: 480px) {
+    .advice p {
+        text-align: center;
+    }
 }

@@ -5,9 +5,12 @@
     --color-secondary: #6A7B8D;
     --color-text-primary: #D1D1D1;
     --color-text-secondary: #B0B0B0;
-    --color-background: #1C1C1C; 
-    --color-component-background: #292929; 
-    --color-accent: #8C9EA3; 
+    --color-background: #1C1C1C;
+    --color-component-background: #292929;
+    --color-accent: #8C9EA3;
+    --font-size-base: 1.6rem;
+    --font-size-large: 2.4rem;
+    --font-size-small: 1.4rem;
 }
 
 * {
@@ -33,6 +36,7 @@ ul {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;

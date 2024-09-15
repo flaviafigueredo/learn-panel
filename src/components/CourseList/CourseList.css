@@ -8,7 +8,7 @@
 }
 
 .course-list-container h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     color: var(--color-text-primary);
     text-align: center;
 }
@@ -19,4 +19,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2.5rem;
+}
+
+@media(max-width: 480px) {
+    .course-list-container {
+        width: 100%;
+    }
+    
+    .course-list-container h1 {
+        font-size: var(--font-size-large);
+    }
 }

@@ -4,7 +4,7 @@
     border-radius: 6px;
     background-color: var(--color-secondary);
     color: #fff;
-    font-size: 1.6rem;
+    font-size: var(--font-size-base);
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }

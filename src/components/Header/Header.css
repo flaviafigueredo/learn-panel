@@ -9,12 +9,9 @@
 }
 
 .header h2 {
-    font-size: 2.8rem;
+    font-size: var(--font-size-large);
 }
 
 .header p {
-    font-size: 2rem;
-    max-width: 100%;
-    text-align: center;
-    margin-top: 1rem;
+    font-size: var(--font-size-small);
 }

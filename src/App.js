@@ -6,12 +6,14 @@ import { Input } from './components/Input/Input';
 import { Textarea } from './components/Textarea/Textarea';
 import { Button } from './components/Button/Button';
 import { Footer } from './components/Footer/Footer';
+import { Advice } from './components/Advice/Advice';
 
 function App() {
   return (
     <>
       <Header />
       <main className="main">
+        <Advice />
         <CourseList />
       </main>
       <Form>
